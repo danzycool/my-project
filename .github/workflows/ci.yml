@@ -35,8 +35,8 @@ jobs:
       with:
         arguments: build
     
-    - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v6
+    - uses: mr-smithers-excellent/docker-build-push@v6
+      name: Build and Push Docker Image
       with:
         image:  danzycool/java-gradle-app
         tags: v1
